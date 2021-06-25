@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-Jun-2021 10:28:37 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="Shop" name="myApp.BmColor" optimistic-lock="version" table="bm_colors">
+    <id name="id" type="int">
+      <column name="ID"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="colorName" type="string">
+      <column length="15" name="color_name"/>
+    </property>
+  </class>
+</hibernate-mapping>

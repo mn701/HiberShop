@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-Jun-2021 10:28:37 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="Shop" name="myApp.Brand" optimistic-lock="version" table="Brands">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="brand" type="string">
+      <column length="30" name="brand"/>
+    </property>
+    <property name="country" type="string">
+      <column length="25" name="country"/>
+    </property>
+    <property name="description" type="string">
+      <column length="65535" name="description"/>
+    </property>
+    <property name="officialSite" type="string">
+      <column length="200" name="official_site"/>
+    </property>
+    <property name="buymaLink" type="string">
+      <column length="200" name="buyma_link"/>
+    </property>
+    <property name="introduction" type="string">
+      <column length="65535" name="introduction"/>
+    </property>
+  </class>
+</hibernate-mapping>

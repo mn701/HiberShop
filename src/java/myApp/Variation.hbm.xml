@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-Jun-2021 10:28:37 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="Shop" name="myApp.Variation" optimistic-lock="version" table="Variations">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="itemId" type="java.lang.Integer">
+      <column name="item_id"/>
+    </property>
+    <property name="sku" type="string">
+      <column length="60" name="sku" unique="true"/>
+    </property>
+    <property name="url" type="string">
+      <column length="200" name="url"/>
+    </property>
+    <property name="colorCode" type="string">
+      <column length="5" name="color_code"/>
+    </property>
+    <property name="sizeName" type="string">
+      <column length="20" name="size_name"/>
+    </property>
+    <property name="hasStock" type="java.lang.Boolean">
+      <column name="has_stock"/>
+    </property>
+    <property name="availability" type="string">
+      <column length="20" name="availability"/>
+    </property>
+    <property name="bmOrder" type="java.lang.Byte">
+      <column name="bm_order"/>
+    </property>
+    <property name="bmSearchsize" type="java.lang.Byte">
+      <column name="bm_searchsize"/>
+    </property>
+    <property name="bmColName" type="string">
+      <column length="32" name="bm_col_name"/>
+    </property>
+    <property name="bmColFamily" type="java.lang.Byte">
+      <column name="bm_col_family"/>
+    </property>
+    <property name="isListed" type="java.lang.Byte">
+      <column name="is_listed"/>
+    </property>
+    <property name="sizeInfo" type="string">
+      <column length="100" name="size_info"/>
+    </property>
+    <property name="lbProduct" type="java.lang.Integer">
+      <column name="lb_product" unique="true"/>
+    </property>
+    <property name="lbSalableQty" type="java.lang.Integer">
+      <column name="lb_salable_qty"/>
+    </property>
+  </class>
+</hibernate-mapping>

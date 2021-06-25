@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-Jun-2021 10:28:37 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="Shop" name="myApp.ListedItem" optimistic-lock="version" table="Listed_items">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="itemId" type="int">
+      <column name="item_id" not-null="true"/>
+    </property>
+    <property name="listedName" type="string">
+      <column length="62" name="listed_name"/>
+    </property>
+    <property name="comment" type="string">
+      <column length="65535" name="comment"/>
+    </property>
+    <property name="category" type="java.lang.Short">
+      <column name="category"/>
+    </property>
+    <property name="season" type="java.lang.Byte">
+      <column name="season"/>
+    </property>
+    <property name="theme" type="string">
+      <column length="100" name="theme"/>
+    </property>
+    <property name="tags" type="string">
+      <column length="150" name="tags"/>
+    </property>
+    <property name="validTill" type="date">
+      <column length="10" name="valid_till"/>
+    </property>
+    <property name="salePrice" type="java.lang.Double">
+      <column name="sale_price" precision="22" scale="0"/>
+    </property>
+    <property name="supplier" type="string">
+      <column length="200" name="supplier"/>
+    </property>
+    <property name="reference" type="string">
+      <column length="65535" name="reference"/>
+    </property>
+    <property name="duties" type="java.lang.Double">
+      <column name="duties" precision="22" scale="0"/>
+    </property>
+    <property name="buymaId" type="string">
+      <column length="20" name="buyma_id"/>
+    </property>
+    <property name="bmControl" type="string">
+      <column length="6" name="bm_control"/>
+    </property>
+    <property name="bmBrandId" type="string">
+      <column length="6" name="bm_brand_id"/>
+    </property>
+    <property name="bmPcs" type="java.lang.Byte">
+      <column name="bm_pcs"/>
+    </property>
+    <property name="bmHasRefprice" type="java.lang.Byte">
+      <column name="bm_has_refprice"/>
+    </property>
+    <property name="itemImage1" type="string">
+      <column length="150" name="item_image_1"/>
+    </property>
+    <property name="itemImage2" type="string">
+      <column length="150" name="item_image_2"/>
+    </property>
+    <property name="itemImage3" type="string">
+      <column length="150" name="item_image_3"/>
+    </property>
+    <property name="itemImage4" type="string">
+      <column length="150" name="item_image_4"/>
+    </property>
+    <property name="itemImage5" type="string">
+      <column length="150" name="item_image_5"/>
+    </property>
+    <property name="itemImage6" type="string">
+      <column length="150" name="item_image_6"/>
+    </property>
+    <property name="itemImage7" type="string">
+      <column length="150" name="item_image_7"/>
+    </property>
+    <property name="itemImage8" type="string">
+      <column length="150" name="item_image_8"/>
+    </property>
+    <property name="itemImage9" type="string">
+      <column length="150" name="item_image_9"/>
+    </property>
+    <property name="itemImage10" type="string">
+      <column length="150" name="item_image_10"/>
+    </property>
+    <property name="itemImage11" type="string">
+      <column length="150" name="item_image_11"/>
+    </property>
+    <property name="itemImage12" type="string">
+      <column length="150" name="item_image_12"/>
+    </property>
+    <property name="itemImage13" type="string">
+      <column length="150" name="item_image_13"/>
+    </property>
+    <property name="itemImage14" type="string">
+      <column length="150" name="item_image_14"/>
+    </property>
+    <property name="itemImage15" type="string">
+      <column length="150" name="item_image_15"/>
+    </property>
+    <property name="itemImage16" type="string">
+      <column length="150" name="item_image_16"/>
+    </property>
+    <property name="itemImage17" type="string">
+      <column length="150" name="item_image_17"/>
+    </property>
+    <property name="itemImage18" type="string">
+      <column length="150" name="item_image_18"/>
+    </property>
+    <property name="itemImage19" type="string">
+      <column length="150" name="item_image_19"/>
+    </property>
+    <property name="itemImage20" type="string">
+      <column length="150" name="item_image_20"/>
+    </property>
+  </class>
+</hibernate-mapping>

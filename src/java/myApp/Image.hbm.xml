@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-Jun-2021 10:28:37 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="Shop" name="myApp.Image" optimistic-lock="version" table="Images">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="itemId" type="java.lang.Integer">
+      <column name="item_id"/>
+    </property>
+    <property name="variationId" type="java.lang.Integer">
+      <column name="variation_id"/>
+    </property>
+    <property name="imgName" type="string">
+      <column length="60" name="img_name"/>
+    </property>
+    <property name="imgUrl" type="string">
+      <column length="250" name="img_url"/>
+    </property>
+  </class>
+</hibernate-mapping>

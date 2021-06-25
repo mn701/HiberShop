@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-Jun-2021 10:28:37 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="Shop" name="myApp.Item" optimistic-lock="version" table="items">
+    <id name="itemId" type="java.lang.Integer">
+      <column name="item_id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="brandId" type="java.lang.Integer">
+      <column name="brand_id"/>
+    </property>
+    <property name="itemName" type="string">
+      <column length="60" name="item_name"/>
+    </property>
+    <property name="url" type="string">
+      <column length="200" name="url"/>
+    </property>
+    <property name="serial" type="string">
+      <column length="60" name="serial" unique="true"/>
+    </property>
+    <property name="price" type="java.lang.Double">
+      <column name="price" precision="22" scale="0"/>
+    </property>
+    <property name="originalPrice" type="java.lang.Double">
+      <column name="original_price" precision="22" scale="0"/>
+    </property>
+    <property name="saleInfo" type="string">
+      <column length="40" name="sale_info"/>
+    </property>
+    <property name="description" type="string">
+      <column length="65535" name="description"/>
+    </property>
+    <property name="details" type="string">
+      <column length="65535" name="details"/>
+    </property>
+    <property name="season" type="string">
+      <column length="20" name="season"/>
+    </property>
+    <property name="reference" type="string">
+      <column length="65535" name="reference"/>
+    </property>
+    <property name="postage" type="java.lang.Double">
+      <column name="postage" precision="22" scale="0"/>
+    </property>
+    <property name="packing" type="java.lang.Double">
+      <column name="packing" precision="22" scale="0"/>
+    </property>
+    <property name="listed" type="java.lang.Boolean">
+      <column name="listed"/>
+    </property>
+    <property name="isDutiable" type="java.lang.Boolean">
+      <column name="is_dutiable"/>
+    </property>
+  </class>
+</hibernate-mapping>
